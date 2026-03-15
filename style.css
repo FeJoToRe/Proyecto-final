@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+body {
+    background-color: #dd0000;
+}
+
+.logo {
+    height: 100px;
+    width: 380px;
+    display: flex;
+    align-self: flex-start;
+    padding-left: 4rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+    font-size: large;
+    padding: auto;
+    justify-content: center;
+}
+
+li {
+    text-decoration: none;
+    color: #000000;
+    font-size: 32px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    color: #dd0202;
+}
+
+.nav-links a {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-image {
+    width: 20%;
+    height: auto;
+    background-image: url('imagenes/sandwichazo_fondo.png');
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    display: flex;
+    opacity: 0.2;
+}
