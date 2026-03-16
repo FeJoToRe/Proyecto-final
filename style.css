@@ -52,12 +52,120 @@ li {
     font-family: 'Poppins', sans-serif;
 }
 
-.hero-image {
-    width: 20%;
-    height: auto;
-    background-image: url('imagenes/sandwichazo_fondo.png');
-    background-repeat: repeat;
-    background-size: 100% 100%;
+.hero {
+    width: min(1200px, 95%);
+    min-height: 380px;
+    margin: 1.5rem auto;
+    border-radius: 14px;
+    overflow: hidden;
     display: flex;
-    opacity: 0.2;
+    align-items: center;
+    padding: 2.5rem;
+    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 520px;
+}
+
+.hero-content h1 {
+    font-size: clamp(1.4rem, 4vw, 2.4rem);
+    line-height: 1.12;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin-bottom: 0.8rem;
+}
+
+.hero-content p {
+    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin-bottom: 1.25rem;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #222222;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 999px;
+}
+
+.hero-btn:hover {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 1500px) {
+    .hero {
+        min-height: 300px;
+        padding: 1.5rem;
+        background-position: 60% center;
+    }
+}
+
+.cuadro {
+    width: 100%;
+    margin: 1.5rem auto;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    padding: 55px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 3cm;
+    margin-top: 4cm;
+    text-align: center;
+}
+
+.show-productos {
+    width: min(1200px, 94%);
+    margin: 0 auto 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 1rem;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-card figcaption {
+    margin-top: 0.9rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2a2a2a;
+}
+
+.product-card p {
+    margin-top: 0.35rem;
+    font-size: 1rem;
+    color: #5a5a5a;
+}
+
+@media (max-width: 900px) {
+    .show-productos {
+        grid-template-columns: 1fr;
+    }
 }
