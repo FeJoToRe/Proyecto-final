@@ -123,7 +123,7 @@ h2 {
     color: #ffffff;
     font-size: 2rem;
     margin-bottom: 2rem;
-    padding-bottom: 3cm;
+    padding-bottom: 1cm;
     margin-top: 4cm;
     text-align: center;
 }
@@ -168,4 +168,38 @@ h2 {
     .show-productos {
         grid-template-columns: 1fr;
     }
+}
+
+footer {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-bottom: 2.4rem;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    font-size: 3.8rem;
+    gap: 16px;
+    margin-left: auto;
+    justify-content: center;
+    
+}
+
+.socials a {
+    color: #dce5f1;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.2s ease;
+    font-size: 16px;
+}
+
+.socials a:hover {
+    color: #ffffff;
 }
