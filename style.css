@@ -327,3 +327,135 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+
+
+.nosotros-wrapper {
+    width: min(1200px, 94%);
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+}
+
+.nosotros-hero {
+    text-align: center;
+    padding: 2.5rem 1rem 1rem;
+    color: #ffffff;
+}
+
+.nosotros-hero h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+.nosotros-hero p {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    opacity: 0.9;
+}
+
+.nosotros-card {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.icono-valores {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    text-align: center;
+    font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.nosotros-card-title {
+    color: #dd0000;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nosotros-card p {
+    font-size: 1.05rem;
+    color: #3a3a3a;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.nosotros-card strong {
+    color: #dd0000;
+    font-weight: 700;
+}
+
+.nosotros-valores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.valor-item {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+}
+
+.valor-item h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #dd0000;
+    margin-bottom: 0.75rem;
+}
+
+.valor-item p {
+    font-size: 0.95rem;
+    color: #5a5a5a;
+    line-height: 1.7;
+}
+
+.nosotros-wrapper figure {
+    width: 100%;
+    margin: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+    display: flex;
+    gap: 0;
+}
+
+.nosotros-wrapper figure img {
+    flex: 1;
+    width: 50%;
+    height: clamp(220px, 32vw, 420px);
+    object-fit: contain scale-down;
+    object-position: center;
+    display: flex;
+}
+
+.nosotros-foto {
+    flex: 1;
+    width: 50%;
+    height: clamp(220px, 32vw, 420px);
+    object-fit: contain scale-down;
+    object-position: center;
+    display: flex;
+}
+
+@media (max-width: 750px) {
+    .nosotros-valores {
+        grid-template-columns: 1fr;
+    }
+}
