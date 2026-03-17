@@ -45,6 +45,11 @@ li {
     color: #dd0202;
 }
 
+li:hover {
+    color: #000000;
+    transition: color 0.4s ease;
+}
+
 .nav-links a {
     display: flex;
     text-decoration: none;
@@ -80,9 +85,18 @@ li {
 
 .hero-content p {
     font-size: clamp(0.9rem, 1.8vw, 1.1rem);
-    text-transform: uppercase;
     letter-spacing: 0.4px;
     margin-bottom: 1.25rem;
+    padding-top: 20px;
+}
+
+.hero-content strong {
+    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+    letter-spacing: 0.5px;
+    padding-top: 50px;
+    align-items: center;
+    display: flex;
+    text-transform: uppercase;
 }
 
 .hero-btn {
