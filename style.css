@@ -145,6 +145,15 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 1.1rem;
+    padding-bottom: 1cm;
+    margin-top: 1.7cm;
+    text-align: center;
+}
+
 .show-productos {
     width: min(1200px, 94%);
     margin: 0 auto 2rem;
@@ -206,7 +215,7 @@ footer p {
     gap: 16px;
     margin-left: auto;
     justify-content: center;
-    
+
 }
 
 .socials a {
@@ -258,7 +267,8 @@ footer p {
     margin-bottom: 0.4rem;
 }
 
-.field-group input, .field-group textarea {
+.field-group input,
+.field-group textarea {
     border: 2px solid #e0e0e0;
     border-radius: 8px;
     padding: 0.65rem 0.9rem;
@@ -268,7 +278,8 @@ footer p {
     outline: none;
 }
 
-.field-group input:focus, .field-group textarea:focus {
+.field-group input:focus,
+.field-group textarea:focus {
     border-color: #dd0000;
 }
 
@@ -458,4 +469,39 @@ footer p {
     .nosotros-valores {
         grid-template-columns: 1fr;
     }
+}
+
+.container-productos {
+    width: min(1200px, 94%);
+    margin: 0 auto 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.tarjeta-productos {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    column-gap: 2rem;
+}
+
+.text-productos {
+    color: #000000;
+    font-size: 1.3rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.imagen-productos img {
+    width: 100%;
+    height: 120px;
+    object-fit: fill;
+    border-radius: 8px;
+    display: block;
 }
