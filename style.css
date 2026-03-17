@@ -440,7 +440,7 @@ footer p {
     flex: 1;
     width: 50%;
     height: clamp(220px, 32vw, 420px);
-    object-fit: contain scale-down;
+    object-fit: fill;
     object-position: center;
     display: flex;
 }
