@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandwichazo - Contacto</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d42cd7ebcb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -25,6 +26,43 @@
         </nav>
     </header>
 
+    <section id="grid-contacto">
+        <form class="formulario-grid">
+            <h1>Contactanos</h1>
+
+            <div class="field-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+            </div>
+
+            <div class="field-group">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo">
+            </div>
+
+            <div class="field-group">
+                <label for="celular">Teléfono:</label>
+                <input type="text" id="celular">
+            </div>
+
+            <div class="field-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje"></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+
+        <div class="mapa-container">
+            <h2>Encuéntranos en la Avenida Independencia</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.0174904181686!2d-69.95624532309058!3d18.43751498264007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea561c28fd9cff1%3A0x5cacdabb8629eb3!2sEl%20Sandwichazo!5e0!3m2!1ses-419!2sdo!4v1773708412196!5m2!1ses-419!2sdo"
+                allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+    </section>
 
     <footer>
         <p>&copy; 2026 El Sandwichazo. Todos los derechos reservados.</p>

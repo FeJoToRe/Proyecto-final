@@ -16,6 +16,9 @@ nav {
 
 body {
     background-color: #dd0000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .logo {
@@ -189,7 +192,7 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 1rem 0;
-    margin-top: 2rem;
+    margin-top: auto;
 }
 
 footer p {
@@ -216,4 +219,111 @@ footer p {
 
 .socials a:hover {
     color: #ffffff;
+}
+
+#grid-contacto {
+    width: min(1200px, 94%);
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.formulario-grid {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+}
+
+.formulario-grid h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #dd0000;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+.field-group label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #2a2a2a;
+    margin-bottom: 0.4rem;
+}
+
+.field-group input, .field-group textarea {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 0.65rem 0.9rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.2s ease;
+    outline: none;
+}
+
+.field-group input:focus, .field-group textarea:focus {
+    border-color: #dd0000;
+}
+
+.field-group textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.btn-enviar {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #dd0000;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: red 0.2s ease;
+    margin-top: 0.5rem;
+}
+
+.btn-enviar:hover {
+    background-color: #b30000;
+}
+
+.mapa-container {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+}
+
+.mapa-container h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #dd0000;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.mapa-container iframe {
+    width: 550px;
+    height: 550px;
+    border-radius: 8px;
+    border: 0;
+    display: block;
+}
+
+@media (max-width: 850px) {
+    #grid-contacto {
+        grid-template-columns: 1fr;
+    }
 }
