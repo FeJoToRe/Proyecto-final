@@ -169,6 +169,11 @@ h3, h2 {
     text-align: center;
     padding-bottom: 1rem;
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.10);
 }
 
 .product-card img {
@@ -489,6 +494,16 @@ footer p {
     grid-template-columns: 1fr auto;
     gap: 1rem;
     align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.tarjeta-productos:hover {
+    background-color: #9e0000;
+}
+
+.tarjeta-productos:hover .text-productos h4,
+.tarjeta-productos:hover .text-productos {
+    color: #ffffff;
 }
 
 .text-productos h4 {
@@ -496,6 +511,7 @@ footer p {
     margin-bottom: 0.5rem;
     padding: 0.5rem;
     font-size: 25px;
+    transition: color 0.3s ease;
 }
 
 .text-productos {
@@ -503,6 +519,7 @@ footer p {
     font-size: 1rem;
     font-weight: 100;
     text-align: start;
+    transition: color 0.3s ease;
 }
 
 .imagen-productos {
@@ -510,8 +527,8 @@ footer p {
 }
 
 .imagen-productos img {
-    width: 96px;
-    height: 96px;
+    width: 10em;
+    height: 10em;
     object-fit: cover;
     border-radius: 8px;
     display: block;
